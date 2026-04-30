@@ -35,7 +35,7 @@
 html { font-size: 18px; }
 
 @media (max-width: 600px) {
-    html { font-size: 24px; }
+    html { font-size: 22px; }
 }
 
 body {
@@ -157,7 +157,7 @@ img { max-width: 100%; height: auto; }
 /* ── screenplay layout ──────────────────────────────────────────────── */
 
 body.screenplay {
-    max-width: 7.5in;
+    max-width: 6in;
     line-height: 1.5;
 }
 
@@ -177,54 +177,24 @@ body.screenplay h1 {
 .character {
     margin-left: 2.2in;
     margin-bottom: 0;
+    font-weight: bold;
     text-transform: uppercase;
-}
-
-.parenthetical {
-    margin-left: 1.5in;
-    margin-right: 1.75in;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-style: normal;
 }
 
 .dialogue {
     margin-left: 1in;
-    margin-right: 1in;
+    margin-right: 1.5in;
     margin-top: 0;
     margin-bottom: 0.75em;
 }
 
-.character + .dialogue,
-.parenthetical + .dialogue {
+.character + .dialogue {
     margin-top: 0;
-}
-
-.character + .parenthetical,
-.dialogue + .parenthetical {
-    margin-top: 0;
-}
-
-.dialogue:has(+ .parenthetical) {
-    margin-bottom: 0;
 }
 
 .action {
     margin-top: 0;
     margin-bottom: 0.75em;
-}
-
-.transition {
-    text-align: right;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.centered {
-    text-align: center;
-    margin: 1em auto;
 }
 
 .section-label {
@@ -251,13 +221,6 @@ body.screenplay hr.section-break {
     }
 }
 
-/* ── screenplay responsive: iPad portrait ──────────────────────────── */
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    html { font-size: 21px; }
-    body.screenplay { max-width: 100%; }
-}
-
 /* ── screenplay responsive: mobile ─────────────────────────────────── */
 
 @media (max-width: 600px) {
@@ -267,13 +230,10 @@ body.screenplay hr.section-break {
     .character {
         margin-left: 0;
         text-align: center;
+        font-weight: bold;
     }
     .dialogue {
         margin-left: 1em;
-        margin-right: 0;
-    }
-    .parenthetical {
-        margin-left: 2em;
         margin-right: 0;
     }
 }
@@ -300,151 +260,88 @@ body.screenplay hr.section-break {
 }
     </style>
 </head>
-<body class="screenplay">
-<p class="character">NARRATOR</p>
-<p class="dialogue">It had been raining ever since Benjamin entered the hill towns. He had come here to escape the soldiers pursuing him, not because he thought his parents might actually be here. The pounding of their bootsteps echoing off the ancient, colorless houses seemed to have ceased but moments before. And yet it was hard to imagine that <em>anything</em> had come before these cobblestone streets, the drooping houses and the furtive dead passing him — and the rain. What if he were going in a <em>literal circle</em>? What if he had passed into a labyrinth that had no solution?</p>
-<p class="dialogue">He stopped to rest a moment in a doorway. It could not go on forever, not actually. “Anything that goes on forever will eventually end,” his father had once told him. But <em>where</em> did it end and could anyone help him find the way out?</p>
-<p class="dialogue">The dead were not particularly forthcoming, he had found. Mostly they ignored him completely. Or glanced at him with their haunted eyes before hurrying on to do whatever it was they were doing. But didn’t they have all of eternity to do it? Why were they rushing?</p>
-<p class="dialogue">When the door he was leaning on opened, he almost fell inside.</p>
-<p class="action">SFX: DOOR OPEN</p>
-<p class="character">BERTHOLD</p>
-<p class="dialogue">What you doing here, eh?</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">Oh, I’m sorry. Just...</p>
-<p class="character">BERTHOLD</p>
-<p class="dialogue">Well, this is <em>my</em> door you’re leaning on. So <em>scram</em>.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">I will, sir. And I’m sorry to bother you. But may I ask you just one quick question?</p>
-<p class="character">NARRATOR</p>
-<p class="dialogue">The dead man eyed him suspiciously.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">I’m here looking for my parents. They were kidnapped from the, uh... from the world of the living. And brought here.</p>
-<p class="character">BERTHOLD</p>
-<p class="dialogue">By whom?</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">I don’t know.</p>
-<p class="character">BERTHOLD</p>
-<p class="dialogue">What for?</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">I don’t know.</p>
-<p class="character">BERTHOLD</p>
-<p class="dialogue">Well, how you going to find them, then?</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">Well, that’s why I’m talking to you. To see if you know anything.</p>
-<p class="character">BERTHOLD</p>
-<p class="dialogue">Nothing to know. Just a bunch of rumors.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">What rumors? Like, about living people being...</p>
-<p class="character">BERTHOLD</p>
-<p class="dialogue">Oh, you always hear rumors. That time it’s a daughter of a goddess, this time it’s a man and a woman riding an <em>Altura</em>, escorted by soldiers off god knows where.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">So you <em>saw</em> them?</p>
-<p class="character">BERTHOLD</p>
-<p class="dialogue">I said <em>rumors.</em> Now scram.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">Why would they be accompanied by <em>soldiers</em>? <em>Whose</em> soldiers?</p>
-<p class="character">BERTHOLD</p>
-<p class="dialogue">Are you stupid? Or are you... are you trying to get me in <em>trouble</em>?</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">No, not at all...</p>
-<p class="character">BERTHOLD</p>
-<p class="dialogue">One of Lord Volando’s snitches, eh? Well, you ain’t gettin’ nothin’ outta me. So bugger off.</p>
-<p class="action">SFX: DOOR SLAM</p>
-<p class="character">NARRATOR</p>
-<p class="dialogue">Great. So now he knew some guy named Lord Volando had — <em>might have</em> — something to do with where his parents went. Which told him exactly nothing about where they were. Or how to get out of this place.</p>
-<p class="dialogue">He pulled the hood of his red sweatshirt around his head, shouldered his blue, nylon backpack and was about to set <em>eeny-meeny</em> his way to choosing a direction. But before he did, he noticed something new:</p>
-<p class="dialogue">A street just across from where he stood sloped downward. Not flat, not upward: down.</p>
-<p class="action">Maybe out.</p>
-<p class="dialogue">Benjamin jogged down the long hill and before long, the dark buildings fell away like a curtain drawn back, and a grey green sea stretched to the horizon. Pale shapes moved beneath its surface, slow and distant, like ghosts of submarines.</p>
-<p class="action">Benjamin had found a port.</p>
-<p class="dialogue">Great, black silhouettes of ships menaced from the docks, their masts and spars reaching into the sky like skeletal fingers, their rigging like threadbare shrouds. More were at anchor in the bay. But among all the windows of the ships and the crumbling warehouses, there was not a single glimmer of light.</p>
-<p class="dialogue">“Dead” was the word that came to Benjamin’s mind. “It sure is,” he thought with a chuckle. And right now, that was a relief. Maybe he could even find a safe place to lie down and rest for a while.</p>
-<p class="dialogue">That was when he heard the music. A guitar plucked slowly, and a deep voice singing. Benjamin’s heart sank. He was not alone after all.</p>
-<p class="dialogue">But the melody tugged at his memory. Strange as it was, somehow he knew it. But how? His curiosity pulled him onward, until he found the source of the music. He hid behind a pile of crumbling barrels to listen.</p>
-<p class="dialogue">At the end of the pier, a figure sat upon a coil of rope, playing. The figure wore a deep hood that revealed only a great, faintly green nose, and two pale, oversized hands moving gently over the strings.</p>
-<p class="dialogue">A raven perched nearby on a wooden post. It cocked its head in Benjamin’s direction, its glittering eye seeming to fix him in its gaze.</p>
-<p class="character">RAVEN</p>
-<p class="dialogue">CAW!</p>
-<p class="action">The Hooded Figure’s song comes to an end.</p>
-<p class="character">RAVEN</p>
-<p class="dialogue">CAW!</p>
-<p class="character">HOODED FIGURE</p>
-<p class="dialogue">What is it, my dear?</p>
-<p class="character">RAVEN</p>
-<p class="dialogue">CAW CAW!</p>
-<p class="character">HOODED FIGURE</p>
-<p class="dialogue">I see.</p>
-<p class="parenthetical">(beat, then calling out)</p>
-<p class="dialogue">Come out, boy.</p>
-<p class="action">SFX: Benjamin — sharp intake of breath.</p>
-<p class="character">HOODED FIGURE</p>
-<p class="parenthetical">(calling)</p>
-<p class="dialogue">I am no friend to Lord Volando, nor he to me. I will not harm you.</p>
-<p class="character">NARRATOR</p>
-<p class="dialogue">In spite of himself, Benjamin stepped from behind the barrels.</p>
-<p class="character">HOODED FIGURE</p>
-<p class="dialogue">So. The rumors are true.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">What rumors?</p>
-<p class="character">HOODED FIGURE</p>
-<p class="dialogue">A little chalk dust does not conceal a soul yet glowing with life from anyone with eyes to see.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">Now <em>I’m</em> part of the rumors, too?</p>
-<p class="character">HOODED FIGURE</p>
-<p class="dialogue">Your appearance here is no less marvelous than that of your parents.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">How do you know they’re my parents?</p>
-<p class="character">HOODED FIGURE</p>
-<p class="dialogue">You just told me.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">Well, I’m looking for them.</p>
-<p class="character">HOODED FIGURE</p>
-<p class="dialogue">Trying to rescue them.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">I have to find them first. Who is “Lord Volando” and where is he taking them?</p>
-<p class="character">HOODED FIGURE</p>
-<p class="dialogue">Nowhere they could be easily found, that’s for certain.</p>
-<p class="character">NARRATOR</p>
-<p class="dialogue">Benjamin’s shoulders slumped.</p>
-<p class="character">HOODED FIGURE</p>
-<p class="dialogue">But finding them is not the challenge.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">Then what is?</p>
-<p class="character">HOODED FIGURE</p>
-<p class="dialogue">Finding them in <em>time.</em></p>
-<p class="parenthetical">(beat)</p>
-<p class="dialogue">The dead do not forget who they were in life. But should the living come here before their time, their memories quickly fade.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">And then what?</p>
-<p class="character">HOODED FIGURE</p>
-<p class="dialogue">Their return home is impossible.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">But I have no idea what to do! I don’t know where they are, I don’t know how to get them out of wherever that is...</p>
-<p class="character">NARRATOR</p>
-<p class="dialogue">The figure pointed a long, pale finger: out in the gloom a ship lay at anchor, black hull, black sails, lanterns burning with a sickly green fire.</p>
-<p class="character">HOODED FIGURE</p>
-<p class="dialogue">That is the Naglfar. Its captain is Bartholomew Roberts. And he and his crew have stolen something very dangerous, which must be returned where it belongs.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">What does this have to do with finding my parents?</p>
-<p class="character">HOODED FIGURE</p>
-<p class="dialogue">The stone is very powerful. For thousands of years it held captive a demon, by filling its mind with dreams. The pirates took it because to them the demon and the chaos it wrought are mere legend. To them, it is a pretty bauble. But ignorance of the truth does not dull its edge.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">And you... want me to go get it?</p>
-<p class="character">NARRATOR</p>
-<p class="dialogue">The figure inclined his head.</p>
-<p class="action">Beat.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">Could it help me find my parents?</p>
-<p class="character">HOODED FIGURE</p>
-<p class="dialogue">I could make it show us where they are.</p>
-<p class="character">BENJAMIN</p>
-<p class="dialogue">But you didn’t know I was going to come along. If I hadn’t, you were just going to sit here and let the demon wreak havoc or whatever? Why not go get it yourself?</p>
-<p class="character">HOODED FIGURE</p>
-<p class="dialogue">I was like you, long ago. Fearless and strong. But I no longer make history; I am merely its subject. It is your turn now, young one. Living one.</p>
-<p class="dialogue">Bring me the stone.</p>
-<p class="character">NARRATOR</p>
-<p class="dialogue">Benjamin found a boat, little more than a raft fitted with oars, and pushed out across the spectral water. He did his best not to imagine what might be moving below.</p>
-<p class="dialogue">The Naglfar loomed larger as he drew near, a great galleon, ancient and barnacled, its sails hanging limp in the windless air. And then he saw the hull.</p>
-<p class="dialogue">It was studded with fingernails, thousands of them, yellowed and curling, pressed into the wood like scales. Benjamin grabbed the anchor chain and began to climb.</p>
+<body>
+<p>NARRATOR It had been raining ever since Benjamin entered the hill towns. He had come here to escape the soldiers pursuing him, not because he thought his parents might actually be here. The pounding of their bootsteps echoing off the ancient, colorless houses seemed to have ceased but moments before. And yet it was hard to imagine that <em>anything</em> had come before these cobblestone streets, the drooping houses and the furtive dead passing him — and the rain. What if he were going in a <em>literal circle</em>? What if he had passed into a labyrinth that had no solution?</p>
+<p>He stopped to rest a moment in a doorway. It could not go on forever, not actually. “Anything that goes on forever will eventually end,” his father had once told him. But <em>where</em> did it end and could anyone help him find the way out?</p>
+<p>The dead were not particularly forthcoming, he had found. Mostly they ignored him completely. Or glanced at him with their haunted eyes before hurrying on to do whatever it was they were doing. But didn’t they have all of eternity to do it? Why were they rushing?</p>
+<p>When the door he was leaning on opened, he almost fell inside.</p>
+<p>SFX: DOOR OPEN</p>
+<p>BERTHOLD What you doing here, eh?</p>
+<p>BENJAMIN Oh, I’m sorry. Just…</p>
+<p>BERTHOLD Well, this is <em>my</em> door you’re leaning on. So <em>scram</em>.</p>
+<p>BENJAMIN I will, sir. And I’m sorry to bother you. But may I ask you just one quick question?</p>
+<p>NARRATOR The dead man eyed him suspiciously.</p>
+<p>BENJAMIN I’m here looking for my parents. They were kidnapped from the, uh… from the world of the living. And brought here.</p>
+<p>BERTHOLD By whom?</p>
+<p>BENJAMIN I don’t know.</p>
+<p>BERTHOLD What for?</p>
+<p>BENJAMIN I don’t know.</p>
+<p>BERTHOLD Well, how you going to find them, then?</p>
+<p>BENJAMIN Well, that’s why I’m talking to you. To see if you know anything.</p>
+<p>BERTHOLD Nothing to know. Just a bunch of rumors.</p>
+<p>BENJAMIN What rumors? Like, about living people being…</p>
+<p>BERTHOLD Oh, you always hear rumors. That time it’s a daughter of a goddess, this time it’s a man and a woman riding an <em>Altura</em>, escorted by soldiers off god knows where.</p>
+<p>BENJAMIN So you <em>saw</em> them?</p>
+<p>BERTHOLD I said <em>rumors.</em> Now scram.</p>
+<p>BENJAMIN Why would they be accompanied by <em>soldiers</em>? <em>Whose</em> soldiers?</p>
+<p>BERTHOLD Are you stupid? Or are you… are you trying to get me in <em>trouble</em>?</p>
+<p>BENJAMIN No, not at all…</p>
+<p>BERTHOLD One of Lord Volando’s snitches, eh? Well, you ain’t gettin’ nothin’ outta me. So bugger off.</p>
+<p>SFX: DOOR SLAM</p>
+<p>NARRATOR Great. So now he knew some guy named Lord Volando had — <em>might have</em> — something to do with where his parents went. Which told him exactly nothing about where they were. Or how to get out of this place.</p>
+<p>He pulled the hood of his red sweatshirt around his head, shouldered his blue, nylon backpack and was about to set <em>eeny-meeny</em> his way to choosing a direction. But before he did, he noticed something new:</p>
+<p>A street just across from where he stood sloped downward. Not flat, not upward: down.</p>
+<p>Maybe out.</p>
+<p>Benjamin jogged down the long hill and before long, the dark buildings fell away like a curtain drawn back, and a grey green sea stretched to the horizon. Pale shapes moved beneath its surface, slow and distant, like ghosts of submarines.</p>
+<p>Benjamin had found a port.</p>
+<p>Great, black silhouettes of ships menaced from the docks, their masts and spars reaching into the sky like skeletal fingers, their rigging like threadbare shrouds. More were at anchor in the bay. But among all the windows of the ships and the crumbling warehouses, there was not a single glimmer of light.</p>
+<p>“Dead” was the word that came to Benjamin’s mind. “It sure is,” he thought with a chuckle. And right now, that was a relief. Maybe he could even find a safe place to lie down and rest for a while.</p>
+<p>That was when he heard the music. A guitar plucked slowly, and a deep voice singing. Benjamin’s heart sank. He was not alone after all.</p>
+<p>But the melody tugged at his memory. Strange as it was, somehow he knew it. But how? His curiosity pulled him onward, until he found the source of the music. He hid behind a pile of crumbling barrels to listen.</p>
+<p>At the end of the pier, a figure sat upon a coil of rope, playing. The figure wore a deep hood that revealed only a great, faintly green nose, and two pale, oversized hands moving gently over the strings.</p>
+<p>A raven perched nearby on a wooden post. It cocked its head in Benjamin’s direction, its glittering eye seeming to fix him in its gaze.</p>
+<p>RAVEN CAW!</p>
+<p>The Hooded Figure’s song comes to an end.</p>
+<p>RAVEN CAW!</p>
+<p>HOODED FIGURE What is it, my dear?</p>
+<p>RAVEN CAW CAW!</p>
+<p>HOODED FIGURE I see. (beat, then calling out) Come out, boy.</p>
+<p>SFX: Benjamin — sharp intake of breath.</p>
+<p>HOODED FIGURE (calling) I am no friend to Lord Volando, nor he to me. I will not harm you.</p>
+<p>NARRATOR In spite of himself, Benjamin stepped from behind the barrels.</p>
+<p>HOODED FIGURE So. The rumors are true.</p>
+<p>BENJAMIN What rumors?</p>
+<p>HOODED FIGURE A little chalk dust does not conceal a soul yet glowing with life from anyone with eyes to see.</p>
+<p>BENJAMIN Now <em>I’m</em> part of the rumors, too?</p>
+<p>HOODED FIGURE Your appearance here is no less marvelous than that of your parents.</p>
+<p>BENJAMIN How do you know they’re my parents?</p>
+<p>HOODED FIGURE You just told me.</p>
+<p>BENJAMIN Well, I’m looking for them.</p>
+<p>HOODED FIGURE Trying to rescue them.</p>
+<p>BENJAMIN I have to find them first. Who is “Lord Volando” and where is he taking them?</p>
+<p>HOODED FIGURE Nowhere they could be easily found, that’s for certain.</p>
+<p>NARRATOR Benjamin’s shoulders slumped.</p>
+<p>HOODED FIGURE But finding them is not the challenge.</p>
+<p>BENJAMIN Then what is?</p>
+<p>HOODED FIGURE Finding them in <em>time.</em> (beat) The dead do not forget who they were in life. But should the living come here before their time, their memories quickly fade.</p>
+<p>BENJAMIN And then what?</p>
+<p>HOODED FIGURE Their return home is impossible.</p>
+<p>BENJAMIN But I have no idea what to do! I don’t know where they are, I don’t know how to get them out of wherever that is…</p>
+<p>NARRATOR The figure pointed a long, pale finger: out in the gloom a ship lay at anchor, black hull, black sails, lanterns burning with a sickly green fire.</p>
+<p>HOODED FIGURE That is the Naglfar. Its captain is Bartholomew Roberts. And he and his crew have stolen something very dangerous, which must be returned where it belongs.</p>
+<p>BENJAMIN What does this have to do with finding my parents?</p>
+<p>HOODED FIGURE The stone is very powerful. For thousands of years it held captive a demon, by filling its mind with dreams. The pirates took it because to them the demon and the chaos it wrought are mere legend. To them, it is a pretty bauble. But ignorance of the truth does not dull its edge.</p>
+<p>BENJAMIN And you… want me to go get it?</p>
+<p>NARRATOR The figure inclined his head.</p>
+<p>Beat.</p>
+<p>BENJAMIN Could it help me find my parents?</p>
+<p>HOODED FIGURE I could make it show us where they are.</p>
+<p>BENJAMIN But you didn’t know I was going to come along. If I hadn’t, you were just going to sit here and let the demon wreak havoc or whatever? Why not go get it yourself?</p>
+<p>HOODED FIGURE I was like you, long ago. Fearless and strong. But I no longer make history; I am merely its subject. It is your turn now, young one. Living one.</p>
+<p>Bring me the stone.</p>
+<hr />
+<p>NARRATOR Benjamin found a boat, little more than a raft fitted with oars, and pushed out across the spectral water. He did his best not to imagine what might be moving below.</p>
+<p>The Naglfar loomed larger as he drew near, a great galleon, ancient and barnacled, its sails hanging limp in the windless air. And then he saw the hull.</p>
+<p>It was studded with fingernails, thousands of them, yellowed and curling, pressed into the wood like scales. Benjamin grabbed the anchor chain and began to climb.</p>
 </body>
 </html>
